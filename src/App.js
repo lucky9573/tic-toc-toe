@@ -1,14 +1,14 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const Square = () => {
     const [value, setValue] = useState(null);
 
     function handleClick() {
-        setValue('X')
+        setValue('X');
     }
     return (
         <>
-            <button id="square" onClick={handleClick}>{value}</button>
+            <button className="square" onClick={handleClick}>{value}</button>
         </>
     )
 }
@@ -32,7 +32,7 @@ function Board() {
                 <Square value="9" />
             </div>
         </>
-    )
+    );
 }
 
 const App = Board
