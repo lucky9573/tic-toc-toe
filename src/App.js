@@ -1,27 +1,33 @@
 const Square = () => {
     return (
         <>
-            <div className="board-row">
-                <button className="square">X</button>
-                <button className="square">X</button>
-                <button className="square">X</button>
-            </div>
-            <div className="board-row">
-                <button className="square">X</button>
-                <button className="square">X</button>
-                <button className="square">X</button>
-            </div>
-            <div className="board-row">
-                <button className="square">X</button>
-                <button className="square">X</button>
-                <button className="square">X</button>
-            </div>
-
+            <button id="square">1</button>
         </>
     )
 }
 
+function Board() {
+    return (
+        <>
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
+            <div className="board-row">
+                <Square />
+                <Square />
+                <Square />
+            </div>
+        </>
+    )
+}
 
-const App = Square
+const App = Board
 
 export default App;
